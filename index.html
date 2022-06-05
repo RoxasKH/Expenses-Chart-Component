@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+  <meta charset = "utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=0.86, maximum-scale=5.0, minimum-scale=0.86" /> <!-- For mobile adapting -->
+  <link rel="icon" href="chart.png" type="image/x-icon" />
+  <link rel="shortcut icon" href="chart.png" type="image/x-icon" /> <!-- To support IE as well -->
+  <title>Expenses chart component</title>
+  <meta name="description" content="Useful and polite expenses chart details.">
+  <meta name="keywords" content="expenses chart component week bar">
+
+  <link href="style.css" rel = "stylesheet">
+  <link href="queries.css" rel = "stylesheet">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <div id = "header"></div>
+
+  <div id = "container">
+
+    <div class = "balance">
+
+      <div>
+
+        <div class = "column">
+          <div class = "title">My balance</div>
+          $921.48
+        </div>
+
+        <div class = "column">
+          <div class = "circle black"></div>
+          <div class = "circle white"></div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class = "spending">
+
+      Spending - Last 7 days
+
+      <div class = "graph">
+      </div>
+
+      <hr>
+
+      <div class = "total">
+        <div class = " dollar column">
+          <div class = "subtitle">Total this month</div>
+          $478.33
+        </div>
+        <div class = "percentage column">
+          +2.4%
+          <div class = "subtitle">from last month</div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>  
+
+  <div id = "footer">
+    Challenge by <a href="https://www.frontendmentor.io/challenges/expenses-chart-component-e7yJBUdjwt"> Frontend Mentor </a>. Coded by <a href="https://github.com/RoxasKH"> Roxas </a>.
+  </div>
+
+</body>
+
+</html>

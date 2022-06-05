@@ -1,0 +1,150 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=DM Sans&display=swap');
+
+html {
+  scroll-behavior: smooth;
+  box-sizing: border-box; /* width include borders */
+  height: 100%;
+  touch-action: manipulation; /* Remove 300ms tap delay */
+}
+
+body {
+  background-color: #F7E9DC;
+  color: #392413;
+  font-family: "DM Sans", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  position: relative;
+}
+
+hr {
+  color: #F2EFEA;
+  border: 1px solid #F2EFEA;
+}
+
+a {
+  color: #FFECDC;
+}
+
+#container {
+  width: 540px;
+  margin: auto;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.balance {
+  background-color: #EC755D;
+  color: #FFF9F1;
+  padding: 30px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.spending {
+  background-color: #FFFCF7;
+  padding: 40px;
+  border-radius: 20px;
+}
+
+.title {
+  font-size: 16px;
+  font-weight: 400;
+  color: #FFEAD8;
+  padding-bottom: 5px;
+}
+
+.subtitle {
+  font-size: 16px;
+  font-weight: 400;
+  color: #A09D98;
+}
+
+.column {
+  width: 48%;
+  display: inline-block;
+  margin: 0;
+}
+
+.circle {
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  float: right;
+  display: inline-block;
+}
+
+.black {
+  background-color: #392413;
+}
+
+.white {
+  border: 2px solid #FFF9F1;
+  margin-right: -23px;
+  box-sizing: border-box;
+}
+
+.dollar {
+  font-size: 40px;
+}
+
+.percentage {
+  font-size: 16px;
+  text-align: right;
+}
+
+.graph {
+  text-align: center;
+  padding-top: 15px;
+  margin: 0 -15px 0 -15px;
+}
+
+.bar {
+  margin: 1px;
+}
+
+.amount {
+  background-color: #392413;
+  border-radius: 5px;
+  color: #FFFCF7;
+  font-size: 17px;
+  padding: 10px 3px 10px 3px;
+  margin: -2px;
+  opacity: 0;
+}
+
+.bar:hover .amount {
+  opacity: 1;
+}
+
+.block {
+  height: 150px;
+  background-color: #EC755D;
+  border-radius: 5px;
+  margin: 10px auto 5px auto;
+}
+
+.block:hover {
+  filter: brightness(135%) grayscale(15%);
+}
+
+.total {
+  padding-top: 10px;
+}
+
+#footer {
+  background-color: #EC755D;
+  text-align: center;
+  font-size: 13px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 10px 0 10px 0;
+}

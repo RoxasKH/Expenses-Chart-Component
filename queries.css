@@ -1,0 +1,28 @@
+@media only screen and (max-width: 1200px) {
+
+	#container {
+		max-width: 90%;
+		max-height: 100%;
+	}
+
+	.balance {
+		margin-top: 20px;
+	}
+
+	.spending {
+		margin-bottom: 20px;
+	}
+
+	.amount {
+		font-size: 15px;
+	}
+
+}
+
+@media only screen and (max-width: 480px) {
+
+	.amount {
+		font-size: 12px;
+	}
+
+}
