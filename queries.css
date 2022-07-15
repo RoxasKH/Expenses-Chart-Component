@@ -11,7 +11,7 @@
 
 	.spending {
 		margin-bottom: 20px;
-		font-size: 26px;
+		font-size: 25px;
 	}
 
 	.amount {
@@ -19,7 +19,7 @@
 	}
 
 	#footer {
-		font-size: 10px;
+		font-size: 8px;
 	}
 
 }
