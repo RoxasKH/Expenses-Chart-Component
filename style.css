@@ -51,6 +51,7 @@ a {
   background-color: #FFFCF7;
   padding: 40px;
   border-radius: 20px;
+  transition: 0.2s;
 }
 
 .title {
@@ -147,4 +148,5 @@ a {
   bottom: 0;
   width: 100%;
   padding: 10px 0 10px 0;
+  transition: 0.2s;
 }
