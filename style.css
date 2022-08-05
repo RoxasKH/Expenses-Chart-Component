@@ -107,6 +107,10 @@ a {
 }
 
 .bar {
+  display: inline-flex;
+  flex-direction: column-reverse;
+  justify-content: flex-start;
+  align-items: center;
   margin: 1px;
 }
 
@@ -118,10 +122,12 @@ a {
   padding: 10px 3px 10px 3px;
   margin: -2px;
   opacity: 0;
+  transition: 0.1s;
 }
 
-.bar:hover .amount {
+.block:hover + .amount, .block:focus + .amount,  .block:active + .amount{
   opacity: 1;
+  transition: 0.2s;
 }
 
 .block {
@@ -129,10 +135,16 @@ a {
   background-color: #EC755D;
   border-radius: 5px;
   margin: 10px auto 5px auto;
+  transition: 0.2s;
 }
 
 .block:hover {
   filter: brightness(135%) grayscale(15%);
+  transition: 0.2s;
+}
+
+.day {
+  font-size: 14px;
 }
 
 .total {

@@ -3,9 +3,9 @@
 var bar = 
 
 `<div class = "bar">
+  <div class = "day"></div>
+  <div class = "block"></div>
 	<div class = "amount"></div>
-	<div class = "block"></div>
-	<div class = "day"></div>
 </div>`;
 
 // getting the width of the graph container
@@ -60,13 +60,11 @@ async function getData() {
       document.getElementsByClassName("day")[i].innerHTML = data[i].day;
       document.getElementsByClassName("amount")[i].innerHTML = "$" + data[i].amount;
 
-      // add some style to the elements
-      document.getElementsByClassName("bar")[i].style.display = "inline-block";
+      // add some style to the day elements by adding the subtitle class to them
       document.getElementsByClassName("day")[i].classList.add("subtitle");
-      document.getElementsByClassName("day")[i].style.fontSize = "14px";
 
-      // set the height of the block dinamically based on the max height
-      document.getElementsByClassName("block")[i].style.height = (data[i].amount * 150) / max.value + "px";
+      // set the height of the block dinamically based on the max height (150px) through flex-basis
+      document.getElementsByClassName("block")[i].style.flexBasis = (data[i].amount * 150) / max.value + "px";
       
     }
 
