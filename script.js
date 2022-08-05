@@ -65,10 +65,13 @@ async function getData() {
 
       // set the height of the block dinamically based on the max height (150px) through flex-basis
       document.getElementsByClassName("block")[i].style.flexBasis = (data[i].amount * 150) / max.value + "px";
+
+      // adding an empty touchevent on blocks to trigger the :active pseudostate on mobile Safari
+      document.getElementsByClassName("block")[i].addEventListener("touchstart", function() {}, false);
       
     }
 
-    //dinamically set the width of the elements based on the width of the container
+    // dinamically set the width of the elements based on the width of the container
     setBarWidth();
 
     // change the color of the block with the max value
