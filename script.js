@@ -76,11 +76,6 @@ async function getData() {
     // change the color of the block with the max value
     document.getElementsByClassName("block")[max.i].style.backgroundColor = "#76B5BC";
 
-    // giving Safari custom CSS rules to fix footer text being too big
-    if (navigator.userAgent.search("Safari") >= 0 && navigator.userAgent.search("Chrome") < 0) {
-      document.getElementById("footer").classList.add("safari");
-    }
-
   }
   catch (error) {
     console.error('Something went wrong with retrieving data');

@@ -18,7 +18,9 @@
 		font-size: 15px;
 	}
 
-	.safari {
+	/* giving Safari custom CSS rules to fix footer text being too big */
+
+	_::-webkit-full-page-media #footer, _:future #footer, :root .safari_only #footer {
 		font-size: 8px;
 	}
 
