@@ -139,7 +139,7 @@ a {
   transition: 0.2s;
 }
 
-.block:hover {
+.block:hover, .block:active {
   filter: brightness(135%) grayscale(15%);
   transition: 0.2s;
 }
