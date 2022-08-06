@@ -85,3 +85,8 @@ async function getData() {
 }
 
 getData();
+
+// giving Safari custom CSS rules to fix footer text being too big
+if (navigator.userAgent.toLowerCase().indexOf('safari/') > -1 && screen.width <= "1280px") {
+  document.getElementById("footer").style.fontSize = "8px";
+}
