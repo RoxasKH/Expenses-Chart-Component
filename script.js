@@ -67,11 +67,8 @@ async function getData() {
       document.getElementsByClassName("block")[i].style.flexBasis = (data[i].amount * 150) / max.value + "px";
     }
 
-    for (var i = 0; i < data.length; i++) {
-      // adding an empty touchevent on blocks to trigger the :active pseudostate on mobile Safari
-      // this is done in a separate loop because Element.innerHTML property completely rewrites the HTML and all event handlers would be lost
-      document.getElementsByClassName("block")[i].addEventListener("touchstart", function() {}, false);
-    }
+    // adding an empty touchevent on the body to trigger the :active pseudostate on mobile Safari
+    document.body.addEventListener("touchstart", function() {}, false);
 
     // dinamically set the width of the elements based on the width of the container
     setBarWidth();
