@@ -137,6 +137,11 @@ a {
   border-radius: 5px;
   margin: 10px auto 5px auto;
   transition: 0.2s;
+
+  /* Fix filters being slow on safari */
+  -webkit-transform: translateZ(0);
+  -webkit-perspective: 1000;
+  -webkit-backface-visibility: hidden;
 }
 
 .block:hover, .block:active {
