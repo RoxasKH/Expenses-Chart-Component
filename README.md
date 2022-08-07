@@ -125,6 +125,6 @@ If you have any idea on how to fix this problem, feel free to contact me or open
 
 Here below you can see some examples of broken loads:
 
-Bars on two lines               |  Spending text too little
---------------------------------|--------------------------------
-![](./design/broken_load1.png)  |  ![](./design/broken_load2.png)
+Bars on two lines                                              |  Spending text too little
+---------------------------------------------------------------|----------------------------------------------------------------
+<img src="design/broken_load1.png" alt="drawing" width="200"/> |  <img src="design/broken_load2.png" alt="drawing" width="200"/>
