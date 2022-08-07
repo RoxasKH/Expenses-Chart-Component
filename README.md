@@ -48,6 +48,8 @@ You can check my solution here: [https://roxaskh.github.io/Expenses-Chart-Compon
 
 The container div is centered using the top and left CSS properties set on 50% and CSS transformations to center it properly.
 
+The two-circles logo is made in CSS because why not.
+
 The hover part was the most difficult part to implement, as it technically would have needed to alter a CSS property of an element while hovering on an element that was consequent in the DOM structure of the page.
 This isn't possible tho as there's no native previous sibling selector in CSS.
 That said, there is instead an [adjacent sibling combinator](https://developer.mozilla.org/en-US/docs/Web/CSS/Adjacent_sibling_combinator) (which acts as a next sibling selector), so the opposite was possible to implement through it.
