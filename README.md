@@ -121,7 +121,7 @@ Last but not least the footer font-size was bigger than it should have been on S
 The website page is most likely to load broken on first load (with no caching) on Safari. After a reload everything gets fine.
 I've seen it happening on Chromium-bowsers as well at the early stages, but now it shouldn't happen anymore on Chrome and derivatives.
 
-I think there's some problems in the loading of the JS script file, but i really don't what's causing them. As forcing a double reload would be immensely dumb, right now i'm leaving it like this.
+I think there's some problems in the loading of the JS script file, but i really don't know what's causing them. As forcing a double reload would be immensely dumb, right now i'm leaving it like this.
 
 If you have any idea on how to fix this problem, feel free to contact me or open an issue about it.
 
