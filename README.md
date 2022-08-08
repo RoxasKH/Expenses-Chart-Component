@@ -57,7 +57,7 @@ That said, there is instead an [adjacent sibling combinator](https://developer.m
 After doing some research, i found [an interesting approach](https://stackoverflow.com/questions/4502633/how-to-affect-other-elements-when-one-element-is-hovered/32470900#32470900): exploiting [Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox) functionalities you could actually display things in a reversed order.
 So, what i did was inverting the order of the elements in the HTML structure, displaying them reversed using Flexbox
 
-```sh
+```css
 display: inline-flex; /* this specifies the elements are displayed as flex elements; the inline logic works the same as for blocks */
 flex-direction: column-reverse; /* this specifies the elements have to be displayed in column and in a reversed order */
 justify-content: flex-start; /* this specifies that items are packed toward the start of the flex-direction */
@@ -91,7 +91,7 @@ This didn't work on Safari anyway. Apparently the [Apple DOCS](https://developer
 
 So i had to add an empty touchstart event listener to the body of the page through JS to explicitly telling the browser to react to touch events, and to remove the default grey translucent tap–highlight colour Mobile Safari applies using the following CSS rule:
 
-```sh
+```css
 html {
     -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
@@ -102,7 +102,7 @@ _Note: adding an empty touchstart event listener on the body of a page can break
 The bars of the graph are highlighted on hover (and on tap) through [CSS filters](https://developer.mozilla.org/en-US/docs/Web/CSS/filter) brightness and grayscale.
 It seems to be that these filters are buggy on Safari (i had a weird flashing happening), and the solution is to add these 3 CSS rules to the elements on which the filters are applied.
 
-```sh
+```css
 -webkit-transform: translateZ(0);
 -webkit-perspective: 1000;
 -webkit-backface-visibility: hidden;
